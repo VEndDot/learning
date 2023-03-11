@@ -1,12 +1,7 @@
 
 # объявление функции
 def replace(text: str, old: str, new: str = ''):
-    new_text = ''
-    for i in text:
-        if i == old:
-            new_text += new
-        else:
-            new_text += i
+    new_text = ''.join(new if i == old else i for i in text)
     print(new_text)
 
 replace('Нет', 'т')
