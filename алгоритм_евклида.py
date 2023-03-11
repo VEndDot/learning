@@ -3,9 +3,9 @@ a = 21
 b = 35
 while a != b:
     if a > b:
-        a = a - b
+        a -= b
     else:
-        b = b - a
+        b -= a
 print(a)
 
 print("#"*35)
